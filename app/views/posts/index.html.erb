@@ -1,0 +1,14 @@
+<h1><%= t('.title') %></h1>
+  <% @post.each do |post| %>
+  <article class="post">
+    <section class="post_head">
+      <h3><%= link_to post.title, post_path(post)%></h3>
+    </section>
+    <section class="post_body">
+        <p><%= sanitize post.body %></p>
+    </section>
+
+
+  </article>
+
+  <%end%>
