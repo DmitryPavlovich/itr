@@ -10,6 +10,42 @@
  * files in this directory. Styles in this file should be added after the last require_* statement.
  * It is generally better to create a new file per style scope.
  *
- *= require_tree .
- *= require_self
  */
+
+@import "bootstrap";
+
+h1 {
+  padding: .25em 0;
+  font-size: 3em;
+  letter-spacing: -2px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+h2
+{
+  margin-bottom: 0;
+  section.post_body{
+        padding: .5em 0;
+  }
+
+}
+
+article.post {
+  margin-bottom: 0.5em;
+  padding: 0.5em 0;
+  border-bottom: 1px solid lightblue;
+}
+
+.row {
+  padding: .5em 0;
+}
+
+.field_with_errors{
+  label {
+    color: #d01612;
+  }
+  input, textarea {
+    color: #d01612;
+  }
+}

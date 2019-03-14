@@ -3,4 +3,5 @@
 <hr>
 <%= link_to "Edit", edit_post_path(@post), :class => 'btn btn-warning'%>
 <%= link_to "Destroy post", post_path(@post), method: :delete, data: {confirm: "Want to delete an article"}, :class => 'btn btn-danger'%>
+<%= link_to t('common.back'), posts_path, class: 'btn btn-outline-secondary' %>
 <hr>
