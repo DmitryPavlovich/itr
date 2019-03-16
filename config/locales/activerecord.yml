@@ -1,0 +1,13 @@
+ru:
+  activerecord:
+    models:
+
+    attributes:
+      post:
+          title: "Название"
+          body: "Содержание"
+          all_tags: "Теги"
+    errors:
+      messages:
+        blank: 'не может быть пустым'
+        too_short: 'недостаточной длины (не может быть меньше %{count} символа)'
