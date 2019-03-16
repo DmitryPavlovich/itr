@@ -5,8 +5,13 @@
       <h2><%= link_to post.title, post_path(post)%></h2>
       <small><time><%= post.created_at.to_date.strftime("%d %B, %Y")%></time></small>
     </section>
+<<<<<<< HEAD
     <section class="post_body">
       <p><%= truncate(post.body.html_safe, :length=>300) %></p>
+=======
+    <section class="post_summary">
+      <p><%= post.summary %></p>
+>>>>>>> posts
     </section>
   </article>
 
