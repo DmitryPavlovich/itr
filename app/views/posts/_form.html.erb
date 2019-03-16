@@ -13,21 +13,17 @@
   <%= f.label :title %>
   <%= f.text_field :title, class: 'form-control' %>
 </div>
+
 <div class="form-group">
-<<<<<<< HEAD
-  <%= f.label :body %>
-  <%= f.hidden_field :body %>
-  <trix-editor input="post_body", class="editor" ></trix-editor>
-=======
   <%= f.label :summary %>
   <%= f.text_area :summary, class: 'form-control' %>
 </div>
+
 <div class="form-group">
   <%= f.label :body %>
-  <%= f.text_area :body, class: 'form-control' %>
->>>>>>> posts
+  <%= f.hidden_field :body %>
+  <trix-editor input="post_body", class="editor" ></trix-editor>
 </div>
-
 
 <div class="form-group">
   <%= f.submit t('.submit', action: @post.new_record? ? 'Создать' : 'Изменить'), class: 'btn btn-success'%>
