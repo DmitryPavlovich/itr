@@ -6,7 +6,7 @@
       <small><time><%= post.created_at.to_date.strftime("%d %B, %Y")%></time></small>
     </section>
     <section class="post_body">
-        <p><%= sanitize post.body %></p>
+      <p><%= truncate(post.body.html_safe, :length=>300) %></p>
     </section>
   </article>
 
