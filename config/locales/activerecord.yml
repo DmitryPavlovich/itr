@@ -5,9 +5,11 @@ ru:
     attributes:
       post:
           title: "Название"
+          summary: "Описание"
           body: "Содержание"
           all_tags: "Теги"
     errors:
       messages:
         blank: 'не может быть пустым'
         too_short: 'недостаточной длины (не может быть меньше %{count} символа)'
+        too_long: 'слишком большая длинна (не может быть более %{count} символов)'

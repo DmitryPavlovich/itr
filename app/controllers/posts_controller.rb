@@ -11,7 +11,7 @@ class PostsController < ApplicationController
 
   def destroy
     @post.destroy
-    redirect_to posts_path, info: 'Article successfully destroy'
+    redirect_to posts_path, info: t('.destroy')
   end
 
   def show
@@ -23,9 +23,9 @@ class PostsController < ApplicationController
 
   def update
     if (@post.update(post_params))
-      redirect_to @post, success: 'Article successfully updated'
+      redirect_to @post, success: t('.success')
     else
-      render'edit', danger: 'Article not updated'
+      render'edit', danger: t('.not')
     end
   end
 
@@ -33,9 +33,9 @@ class PostsController < ApplicationController
   def create
     @post = Post.new(post_params)
     if (@post.save)
-      redirect_to @post, info: 'Article is created'
+      redirect_to @post, info: t('.success')
     else
-      render'new', danger: 'Article not created'
+      render'new', danger: t('.not')
     end
   end
 
